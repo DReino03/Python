@@ -43,5 +43,5 @@ i = 0
 
 print("sèrie àuria: ")
 
-for i in range(1, numero-1):
+for i in range(0, numero):
 	print(fibonacci(i))

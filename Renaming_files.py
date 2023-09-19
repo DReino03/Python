@@ -32,7 +32,12 @@ def rename_file():
             open(fitxer,"w")
 
             rename_file = input(str("Indica quin nom vols fer servir"))
-            
+                        
+            continuacio = input(str("Vols continuar modificant? Y/N"))
+            if continuacio == "Y":
+                exit = False
+            elif continuacio == "N":
+                exit = True
             
 
     

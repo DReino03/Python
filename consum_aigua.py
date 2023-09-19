@@ -14,7 +14,7 @@
 
 
 
-#consum = int(input("Indica el consum de l'aigua:"))
+consum = int(input("Indica el consum de l'aigua:"))
 
 def exercici_1(consum):
     preu_final = 0.0
@@ -26,7 +26,7 @@ def exercici_1(consum):
         preu_final = consum * 0.3
     print(preu_final)
 
-#exercici_1(consum)
+exercici_1(consum)
 
 
 billet = input("Indica el billet que vols seleccionar:")

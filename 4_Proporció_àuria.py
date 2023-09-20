@@ -39,9 +39,9 @@ numero = int(input("Indica un numero: "))
 if numero < 0:
 	print("Prueba otra vez")
 
-i = 0
+
 
 print("sèrie àuria: ")
 
-for i in range(0, numero):
+for i in range(1, numero +1):
 	print(fibonacci(i))

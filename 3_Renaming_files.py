@@ -19,13 +19,15 @@
 #
 #Nota: Us podeu crear un conjunt de fitxers .txt de prova dins del mateix directori per testejar que
 #funciona.
+import os
+
 def rename_file():
     exit = False
     while exit != True:
 
         ruta = input("Indica la ruta del directori que vols treballar:")
 
-        if (os.path.exists(ruta) & os.path.isdir(ruta)):
+        if (os.path.exists(ruta)):
             print("El directori existeix")
             # os.chdir lleva a la ruta especificada
             os.chdir(ruta)
@@ -38,16 +40,16 @@ def rename_file():
             fitxer = input(str("Indica el fitxer que vols modificar el nom:"))
             noufitxer = input(str("Indica el nou nom que vols posar:"))
             os.rename(fitxer,noufitxer)
-            rename_file = input(str("Indica quin nom vols fer servir:"))
 
         else:
             print("El directori no existeix")    
 
         # Entrar o sortir del bucle
-        continuacio = input(str("Vols continuar modificant? Y/N"))
+        continuacio = input(str("Vols continuar modificant? Y/N")).upper
         if continuacio == "Y":
             exit = False
         elif continuacio == "N":
             exit = True
+            print("BYE")
 rename_file()                
             

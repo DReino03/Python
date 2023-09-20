@@ -20,42 +20,12 @@ def exercici_1(consum):
     preu_final = 0.0
     if consum < 50:
         preu_final = 6
-    elif consum >= 50 and consum < 100:
+    elif consum >= 50 and consum >= 200:
         preu_final = consum * 0.1
-    elif consum < 200:
+    elif consum > 200:
         preu_final = consum * 0.3
-    print(preu_final)
+    print("La factura es de " + str(preu_final) + "€")
 
 exercici_1(consum)
 
 
-billet = input("Indica el billet que vols seleccionar:")
-zona = input("Indica quantes zones:")
-def exercici_2_billet(billet:str,zona:int):
-    cost = 0
-    if zona == 1:
-        cost = 1.0
-    elif zona == 2:
-        cost = 1.35
-    elif zona == 3:
-        cost = 1.89
-   
-
-    match billet:
-        case "Bitllet senzill":
-            calcul = 2.20*cost
-            print(calcul)
-        case "TCasual":
-            calcul = 10.20*cost
-            print(calcul)
-        case "TMes":
-            calcul = 54.00*cost
-            print(calcul)
-        case "TTrimestre":
-            calcul = 145.30*cost
-            print(calcul)
-        case "TJove":
-            calcul = 105.00*cost
-            print(calcul)
-
-exercici_2_billet(billet,zona)

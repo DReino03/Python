@@ -51,22 +51,23 @@ def exercici_2_billet():
         elif zona == 3:
             cost = 1.89
     
-        match billet:
+ match billet:
             case "Bitllet senzill":
-                calcul = 2.20*cost
+                calcul = 2.40*cost
                 print("El preu es de:", calcul)
             case "TCasual":
-                calcul = 10.20*cost
+                calcul =  11.35*cost
                 print("El preu es de:", calcul)
             case "TMes":
-                calcul = 54.00*cost
+                calcul = 20.00*cost
                 print("El preu es de:", calcul)
             case "TTrimestre":
                 calcul = 145.30*cost
                 print("El preu es de:", calcul)
             case "TJove":
-                calcul = 105.00*cost
+                calcul = 40.00*cost
                 print("El preu es de:", calcul)
+
 
         pagament = int(input("Indica la quantitat de diners per a pagar: "))       
         print("Retornant canvi de:",pagament-calcul)
